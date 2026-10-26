@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KINO+ — Кино үзэх платформ</title>
+<link rel="canonical" href="https://mangaskino.com/">
+<script>
+if (location.hostname.endsWith('onrender.com')) {
+  location.replace('https://mangaskino.com' + location.pathname + location.search + location.hash);
+}
+</script>
 <style>
 :root{--bg:#08090D;--card:#15171E;--text:#fff;--muted:#A3A6B3;--accent:#E50914;--line:#262936;--r:10px}
 *{box-sizing:border-box;margin:0}
@@ -150,17 +156,14 @@ const DEMO_MOVIES = [
   D(10,'Хотын дуу',2025,['Романтик'],7.6,'series',{episodes:16}),
   D(11,'Сарны хүү',2023,['Аниме','Адал явдал'],8.2,'anime',{premium:true}),
   D(12,'Хамгийн урт шөнө',2026,['Аймшиг'],6.9,'hollywood',{isNew:true}),
- D(13,'Миний киноны нэр',2026,['Драма','Романтик'],8.5,'mongolian',{
-  description:'Киноны товч тайлбар.',
-  duration:'1 цаг 45 мин',
-  director:'Найруулагчийн нэр',
-  cast:['Жүжигчин 1','Жүжигчин 2'],
-  poster:'https://таны-сайт.com/poster.jpg',
-  backdrop:'https://таны-сайт.com/backdrop.jpg',
-  trailer:'https://https://youtu.be/FJ9NSBfvWh4',
-  video:'https://таны-сайт.com/kino.mp4',
-  trending:true
-}),
+  D(13,'Киноны жинхэнэ нэр',2026,['Драма','Романтик'],8.5,'mongolian',{
+    description:'Киноны товч тайлбар.',
+    duration:'1 цаг 45 мин',
+    director:'Найруулагчийн нэр',
+    cast:['Жүжигчин 1','Жүжигчин 2'],
+    trailer:'https://www.youtube.com/embed/FJ9NSBfvWh4',
+    trending:true
+  })
 ];
 const DEMO_PLANS = [
   {id:'m1',name:'1 сар',price:9900,days:30},{id:'m3',name:'3 сар',price:24900,days:90,best:true},{id:'m12',name:'12 сар',price:89900,days:365}
